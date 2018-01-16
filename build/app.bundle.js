@@ -70,9 +70,13 @@
 "use strict";
 
 
-// app.js
-var log = __webpack_require__(1);
-log('hello world');
+var _log = __webpack_require__(1);
+
+var _log2 = _interopRequireDefault(_log);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _log2.default)('hello world'); // plik app.js
 
 /***/ }),
 /* 1 */
@@ -81,8 +85,12 @@ log('hello world');
 "use strict";
 
 
-//log.js
-module.exports = console.log;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+// plik log.js
+exports.default = console.log;
 
 /***/ })
 /******/ ]);

@@ -1,3 +1,3 @@
 
-//log.js
-module.exports = console.log;
+// plik log.js
+export default console.log;
